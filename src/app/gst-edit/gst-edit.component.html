@@ -1,0 +1,71 @@
+
+
+<section id="home" data-stellar-backgrround-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8 col-sm-12 lgbtn">
+      <a routerLink="/" class="brand"><i>Drugstore</i></a>
+    </div>
+    <div class="col-md-4 col-sm-12 text-white">
+        <!-- <h3 class="btns logbtn btn section-btn"><a routerLink="login">Login</a></h3> -->
+      </div>
+  </div>
+
+
+       <div class="row">
+            <div class="col-md-6 col-sm-12">
+              
+                 <div class="home-info">
+                   <h1>DRUGSTORE</h1>
+                      <h4 class="text-white">Promoting soundhealth and bringing wellness to humanity.</h4>
+                      <a routerLink="signup" class="btn section-btn smoothScroll">Join Now</a>
+                     
+                 </div>
+            </div>
+
+       </div>
+  </div>
+</section>
+
+
+<br>
+
+<div class="card">
+  <div class="card-body" style="font-weight:bolder;">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Drug Name</label>
+        <input type="text" class="form-control" formControlName="drug_name" #drug_name [(ngModel)] = "business.drug_name" />
+      </div>
+      <div *ngIf="angForm.controls['drug_name'].invalid && (angForm.controls['drug_name'].dirty || angForm.controls['drug_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['drug_name'].errors.required">
+          Person Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Quantity </label>
+        <input type="text" class="form-control" formControlName="quantity" #quantity [(ngModel)] = "business.quantity" />
+      </div>
+      <div *ngIf="angForm.controls['quantity'].invalid && (angForm.controls['quantity'].dirty || angForm.controls['quantity'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['quantity'].errors.required">
+          Quantity is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Price </label>
+        <input type="text" class="form-control" formControlName="price" #price [(ngModel)] = "business.price" />
+      </div>
+      <div *ngIf="angForm.controls['price'].invalid && (angForm.controls['price'].dirty || angForm.controls['price'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['price'].errors.required">
+          Price is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="updateBusiness(drug_name.value, quantity.value, price.value)"
+        [disabled]="angForm.invalid" 
+        class="btn btn-primary">Update Drug</button>
+      </div>
+    </form>
+  </div>
+</div>

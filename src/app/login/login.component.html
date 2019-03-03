@@ -1,0 +1,57 @@
+
+ <section id ="main">
+  <div class="moverlay"></div>
+  <div class="container">
+    <div class="col-md-12 col-sm-12">
+        <a routerLink="/" class="brand"><h1 class="drk"><i>Drugstore</i></h1></a>
+    </div>
+    <hr class="rule">
+    <h3 class="text-dark">Login with your email and password.</h3>
+
+    <form [formGroup]="navLoginForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 bt btn">
+                <input formControlName="email" class="" type="text" placeholder="email" aria-label="email"
+                [ngClass]="{'is-valid': submitted }">
+
+                <div *ngIf="email.invalid" class="invalid-feedback">
+                  <div>Email is required</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6  bt btn">
+                <input formControlName="password" type="password" placeholder="password" aria-label="password"
+                [ngClass]="{'is-valid': submitted }">
+
+                <div *ngIf="password.invalid" class="invalid-feedback">
+                    <div>Password is required</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+            <!-- <button> -->
+                <button [disabled]="loading" class="bt btn section-btn " type="submit">Login</button>
+                <!-- <a routerLink="/" class=" bt btn section-btn smoothScroll">Login</a> -->
+            <!-- </button>  -->
+            </div>
+        </div>  <br>
+    </form>
+
+   
+
+    <div class="col-md-12 col-sm-12">
+      <p>
+          <span> <b>Don't have an account? </b></span> &nbsp; &nbsp;
+          <a routerLink="/signup"> <span class="text-white"><b>SIGNUP NOW</b></span></a>
+      </p>
+    </div>
+  </div>
+           
+</section>
+
+
+

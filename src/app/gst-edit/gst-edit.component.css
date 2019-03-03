@@ -1,0 +1,508 @@
+body {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+
+/*---------------------------------------
+   TYPOGRAPHY              
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+  line-height: inherit;
+  letter-spacing: -1px;
+}
+
+h1 {
+  color: #292929;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #393939;
+  font-size: 2em;
+}
+
+h3 {
+  color: #505050;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+h4 {
+  color: #696969;
+  font-size: 18px;
+  line-height: normal;
+}
+
+p {
+  color: #757575;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 33px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+
+/*---------------------------------------
+   GENERAL               
+-----------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #252525;
+  font-weight: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+a:hover, a:active, a:focus {
+  color: #ce3232;
+  outline: none;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+.section-title .line-bar {
+  color: #7fc930;
+  display: block;
+  font-size: 5em;
+  line-height: 0;
+}
+
+.section-btn {
+  background: #ce3232;
+  border: 0;
+  border-radius: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-btn:hover,
+.section-btn:focus {
+  background: rgb(12, 7, 5);  /* fallback for old browsers */
+ 
+  border-color: transparent;
+  color: #f1ebeb;
+}
+
+.bt{
+  width: 12rem;
+  margin-top: 2rem;
+  font-size: 17px;    
+  font-style: italic;       
+}
+
+.overlay {
+  background: #AD4005;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575E6, #AD4005);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575E6, #AD4005); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+
+/*---------------------------------------
+     NAV BUTTON             
+-----------------------------------------*/
+
+
+.section-btn a {
+  padding: 0;
+}
+
+.nav .section-btn a:hover {
+  color: #ffffff;
+}
+
+.logbtn{
+    width: 37% !important;  
+    margin: -320px auto 10px 256px  !important;
+    border-radius: 18px !important;
+    color:white;
+    
+}
+
+.lgbtn{
+  width: 37% !important;  
+  margin: -180px auto 10px -386px  !important;
+  color:white;
+  font-size: 2rem;
+  
+}
+
+li .logbtn{
+  text-decoration: none !important;
+}
+
+#home {
+  background: url("../../assets/img/1.jpg") no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 95vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5em;
+  text-align: center;
+}
+
+
+#home h1 {
+  color: #ffffff;
+}
+
+.home-info .section-btn {
+  background: transparent;
+  border: 2px solid #f9f9f9;
+  color: #f9f9f9;
+}
+
+.home-info .section-btn:hover,
+.home-info .section-btn:focus {
+  background: #ce3232;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.home-info span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #f9f9f9;
+  font-weight: 500;
+  margin-left: 20px; 
+}
+
+.home-info span small {
+  display: block;
+}
+
+.rule{
+  width: 20%;
+  margin-bottom: 3rem;
+  background-color:#ce3232;
+}
+
+#main{
+  background: url("../../assets/img/1.jpg") no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.moverlay{
+  background: black;  /* fallback for old browsers */
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+ /*---------------------------------------
+     FOOTER              
+  -----------------------------------------*/
+
+  footer {
+    background: #747272;  /* fallback for old browsers */
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  footer h2 {
+    color: #ffffff;
+  }
+
+
+  footer p,
+  footer span,
+  .footer-link li a {
+    color: #020000;
+  }
+
+  .copyright-text span,
+  .footer-bottom .phone-contact p {
+    font-size: 14px;
+    
+  }
+  
+.drk{
+  color:#393939;
+  }
+
+  /*---------------------------------------
+   RESPONSIVE STYLES              
+-----------------------------------------*/
+
+@media screen and (max-width: 1170px) {
+
+  .custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: inherit;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  #home {
+    text-align: center;
+  }
+
+  .home-info {
+    margin-bottom: 3em;
+  }
+
+  .section-btn {
+    margin-left: 1em;
+  }
+
+ 
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-info p,
+  .footer-bottom .phone-contact {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .media.blog-thumb .media-left {
+    height: 320px;
+  }
+
+   
+}
+
+@media screen and (min-width: 150px) and (max-width: 410px) {
+  .lgbtn{
+    margin: -75px auto 10px -5px !important;
+    font-size: 1rem;    
+  }
+
+  .logbtn{
+    margin: -135px auto 10px 91px !important;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .btns{
+    
+    width: 3.5rem !important;
+    color: white !important;
+    height: 2.5rem;
+
+  }
+
+  section-btn {
+
+    margin-left: -0.5em;
+
+  }
+  .bt {
+
+    width: 8rem;
+    margin-top: 2rem;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    padding-left: 19px;
+
+  }
+
+  h2{
+  line-height: 25.5px !important;
+  }
+
+ 
+
+}
+
+
+
+@media screen and (min-width: 290px) and (max-width: 410px) {
+  .lgbtn{
+    margin: -85px auto 10px 2px !important;
+    font-size: 1rem;    
+  }
+
+  .logbtn{
+    margin: -150px auto 10px 196px !important;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .btns{
+    
+    width: 4.5rem !important;
+    color: white !important;
+    height: 2.5rem;
+
+  }
+
+ 
+
+}
+
+
+@media screen and(min-width:411px) and (max-width: 575px) {
+  .logbtn{
+    margin: -156px auto 10px 282px !important;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .lgbtn{
+    margin: -93px auto 10px 2px !important;
+    font-size: 1rem;
+  }
+
+  .btns{
+    width: 4.5rem !important;
+    color: white !important;
+    height: 2.5rem;
+  }
+}
+
+
+@media screen and(min-width:576px) and (max-width: 767px) {
+  .logbtn{
+    margin: -105px auto 10px 433px !important;
+    font-size: 1rem;
+  }
+
+  .lgbtn{
+    margin: -60px auto 10px -235px !important;
+    font-size: 1rem;
+  }
+
+  .btns{
+    width: 6rem !important;
+    color: white !important;
+  }
+}
+
+@media screen and(min-width:768px) and (max-width: 1000px) {
+  .logbtn{
+    margin: -140px auto 10px 130px !important;
+    font-size: 1rem;
+  }
+
+  .lgbtn{
+    margin: -80px auto 10px -197px !important;
+    font-size: 1rem;
+  }
+
+  .btns{
+    width: 6rem !important;
+    color: white !important;
+  }
+}
+
+@media screen and(min-width:1001px) and (max-width: 1200px) {
+  .logbtn{
+    margin: -165px auto 10px 180px !important;
+    font-size: 1rem;
+  }
+
+  .lgbtn{
+    margin: -93px auto 10px -230px !important;
+    font-size:1rem;
+  }
+
+  .btns{
+    width: 6rem !important;
+    color: white !important;
+  }
+}

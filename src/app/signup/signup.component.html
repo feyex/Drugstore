@@ -1,0 +1,62 @@
+
+ <section id ="main">
+  <div class="moverlay"></div>
+  <div class="container">
+      <div class="col-md-12 col-sm-12">
+          <a routerLink="/" class="brand"><h1 class="drk"><i>Drugstore</i></h1></a>
+      </div> 
+      <hr class="rule">
+      <h3 class="text-dark">Set your email and password.</h3>
+
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+         
+              <div class="row">
+                  <div class="col-md-4 col-sm-6 bt btn">    
+                      <input formControlName="username" type="text" id="username" placeholder="User name"  required />
+  
+                      <div *ngIf="submitted" class="invalid-feedback" >
+                      <div *ngIf="">First Name is required</div>
+                      </div>
+                  </div>
+              </div>
+
+          <div class="row">
+              <div class="col-md-4 col-sm-6 bt btn">    
+                  <input formControlName="email" type="email" id="inputEmail4" placeholder="Email"  required />
+
+                  <div *ngIf="submitted" class="invalid-feedback">
+                      <div *ngIf="">Email is required</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-4 col-sm-6  bt btn">
+                  <input formControlName="password" type="password" id="password" placeholder="Create Password" required />
+
+                  <div *ngIf="submitted" class="invalid-feedback">
+                  <div *ngIf="">Password is required</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-4 col-sm-6">
+                      <button [disabled]="loading" class=" bt btn section-btn smoothScroll" type="submit"> Sign Up </button>
+              </div>
+          </div><br>
+
+      </form>
+      
+      <div class="col-md-12 col-sm-12">
+          <p>
+              <span> <b>Already have an account? </b></span> &nbsp; &nbsp;
+              <a routerLink="/login"> <span class="text-white"><b>LOGIN</b></span></a>
+          </p>
+      </div>
+
+  </div>
+           
+</section>
+
+
